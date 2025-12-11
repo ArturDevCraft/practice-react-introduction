@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 export default function MenuItem({ text, url }) {
 	return (
 		<li>
@@ -6,3 +7,8 @@ export default function MenuItem({ text, url }) {
 		</li>
 	);
 }
+
+MenuItem.propTypes = {
+	text: PropTypes.string.isRequired,
+	url: PropTypes.string.isRequired,
+};
